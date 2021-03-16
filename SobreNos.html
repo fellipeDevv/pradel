@@ -1,0 +1,843 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Sobre Nós, História</title>
+    <style>
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            width: 40%;
+            margin: auto;
+            margin-top: 2%;
+            color: rgb(9, 75, 75);
+        }
+        
+        body {
+            background-color: white;
+            color: black;
+            font: normal 20pt arial;
+            text-align: center;
+        }
+        
+        div #btn1 {
+            width: 200px auto;
+            height: 100px auto;
+            background-color: aquamarine;
+        }
+        
+        #carr {
+            animation: changeColor2 10s infinite;
+        }
+        
+        #vet {
+            width: 200px;
+            height: 80px;
+            border-radius: 7px;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            margin: 16px;
+            margin-right: 24px;
+            animation: changeColor5 5s infinite;
+        }
+        
+        #hum {
+            width: 200px;
+            height: 80px;
+            border-radius: 7px;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            margin: 16px;
+            margin-right: 24px;
+            animation: changeColor6 5s infinite;
+        }
+        
+        #bel {
+            width: 200px;
+            height: 80px;
+            border-radius: 7px;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            margin: 16px;
+            margin-right: 24px;
+            animation: changeColor8 5s infinite;
+        }
+        
+        #sau {
+            width: 200px;
+            height: 80px;
+            border-radius: 7px;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            margin: 16px;
+            margin-right: 24px;
+            animation: changeColor9 5s infinite;
+        }
+        
+        #ema {
+            width: 200px;
+            height: 80px;
+            border-radius: 7px;
+            align-items: center;
+            font-size: 1.2em;
+            font-weight: 900;
+            margin: 16px;
+            margin-right: 24px;
+            animation: changeColor10 5s infinite;
+        }
+        
+        #btn1 {
+            width: 200px auto;
+            height: 100px auto;
+            background-color: aquamarine;
+            animation: changeColor3 10s infinite;
+        }
+        
+        #rigth {
+            position: relative;
+            margin: auto;
+        }
+        
+        #left {
+            position: relative;
+            margin-left: 980px;
+        }
+        
+        #mid {
+            position: absolute;
+            margin-left: 500px;
+        }
+        
+        #btn2 {
+            width: 200px auto;
+            margin-top: 15px;
+            height: 100px auto;
+        }
+        
+        .topnav1 {
+            background-color: rgb(219, 248, 246);
+            overflow: hidden;
+            top: 12px;
+            width: 100%;
+        }
+        /* Style the links inside the navigation bar */
+        
+        .topnav1 a {
+            left: center;
+            color: #02a05e;
+            text-align: center;
+            text-decoration: none;
+            font-size: 10px;
+        }
+        /* Change the color of links on hover */
+        
+        .topnav1 a:hover {
+            color: rgb(0, 141, 129);
+            border-color: white;
+        }
+        /* Add a color to the active/current link */
+        
+        .topnav1 a.active {}
+        
+        @-webkit-keyframes changeColor1 {
+            0% {
+                background-color: rgba(76, 187, 207, 0.856);
+            }
+            25% {
+                background-color: rgba(81, 177, 194, 0.87);
+                color: rgb(0, 0, 0);
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.863);
+                color: rgb(0, 0, 0);
+            }
+            75% {
+                background-color: rgba(102, 240, 148, 0.836);
+            }
+            100% {
+                background-color: rgba(82, 248, 118, 0.836);
+            }
+        }
+        
+        @-webkit-keyframes changeColor2 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+            }
+            25% {
+                background-color: rgba(81, 177, 194, 0.658);
+                color: rgb(0, 0, 0);
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                color: rgb(0, 0, 0);
+            }
+            75% {
+                background-color: rgba(102, 240, 148, 0.404);
+            }
+            100% {
+                background-color: rgba(82, 248, 118, 0.452);
+            }
+        }
+        
+        @-webkit-keyframes changeColor13 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+                border-color: rgba(102, 240, 148, 0.404);
+            }
+            25% {
+                background-color: rgba(81, 177, 194, 0.658);
+                border-color: rgba(82, 248, 118, 0.452);
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                border-color: mediumaquamarine;
+            }
+            75% {
+                background-color: rgba(102, 240, 148, 0.404);
+            }
+            100% {
+                background-color: rgba(82, 248, 118, 0.452);
+                border-color: rgba(81, 177, 194, 0.658);
+            }
+        }
+        
+        @-webkit-keyframes changeColor12 {
+            0% {
+                border-color: rgba(76, 188, 207, 0.575);
+            }
+            25% {
+                border-color: rgba(81, 177, 194, 0.658);
+                color: rgb(0, 0, 0);
+            }
+            50% {
+                border-color: rgba(80, 162, 255, 0.815);
+                color: rgb(0, 0, 0);
+            }
+            75% {
+                border-color: rgba(102, 240, 148, 0.404);
+            }
+            100% {
+                border-color: rgba(82, 248, 118, 0.452);
+            }
+        }
+        
+        @-webkit-keyframes changeColor4 {
+            0% {
+                color: rgba(76, 188, 207, 0.575);
+            }
+            25% {
+                color: rgba(81, 177, 194, 0.705);
+            }
+            50% {
+                color: rgba(80, 162, 255, 0.815);
+            }
+            75% {
+                color: rgba(51, 243, 115, 0.425);
+            }
+            100% {
+                color: rgba(53, 248, 95, 0.507);
+            }
+        }
+        
+        @-webkit-keyframes changeColor3 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+                background-image: url('19ffV90OEBeVUL6WPSOWTMv7B1TsZc2SkcBEuWeI.png');
+                background-repeat: round;
+            }
+            25% {
+                background-color: rgba(81, 177, 194, 0.658);
+                color: rgb(0, 0, 0);
+                background-image: url('silimarina-metionina-fundo-verde1.jpg');
+                background-repeat: round;
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                color: rgb(0, 0, 0);
+                background-image: url('efeitos-colaterais-l-metionina.jpg');
+                background-repeat: round;
+            }
+            75% {
+                background-color: rgba(102, 240, 148, 0.404);
+                background-image: url('produto.png');
+                background-repeat: round;
+            }
+            100% {
+                background-color: rgba(82, 248, 118, 0.452);
+                background-image: url('testosterona.jpg');
+                background-repeat: round;
+            }
+        }
+        
+        @-webkit-keyframes changeColor5 {
+            0% {
+                background-color: rgba(76, 187, 207, 0.815);
+                background-image: url('Imagem1.png');
+                align-items: flex-start;
+                color: black;
+                background-repeat: no-repeat;
+            }
+            50% {
+                background-color: rgba(42, 126, 221, 0.945);
+                background-image: url('a10612d66871027600c3b319e605f253.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background-color: rgba(49, 189, 95, 0.89);
+                background-image: url('pet.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+        }
+        
+        @-webkit-keyframes changeColor6 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+                background-image: url('Outlook-2vpsimoh.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                background-image: url('pulmao_2020.jpg');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background-color: rgba(102, 240, 148, 0.404);
+                background-image: url('06740e4629c0831665f19c471cf9f4e8.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+        }
+        
+        @-webkit-keyframes changeColor8 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+                background-image: url('beleza.jpg');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                background-image: url('beleza1.jpg');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background-color: rgba(102, 240, 148, 0.404);
+                background-image: url('beleza.jpg');
+                color: black;
+                background-repeat: no-repeat;
+            }
+        }
+        
+        @-webkit-keyframes changeColor9 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+                background-image: url('Outlook-2vpsimoh.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                background-image: url('pulmao_2020.jpg');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background-color: rgba(102, 240, 148, 0.404);
+                background-image: url('06740e4629c0831665f19c471cf9f4e8.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+        }
+        
+        @-webkit-keyframes changeColor10 {
+            0% {
+                background-color: rgba(76, 188, 207, 0.575);
+                background-image: url('Outlook-2vpsimoh.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            50% {
+                background-color: rgba(80, 162, 255, 0.815);
+                background-image: url('pulmao_2020.jpg');
+                color: black;
+                background-repeat: no-repeat;
+            }
+            100% {
+                background-color: rgba(102, 240, 148, 0.404);
+                background-image: url('06740e4629c0831665f19c471cf9f4e8.png');
+                color: black;
+                background-repeat: no-repeat;
+            }
+        }
+        
+        @media screen and (max-width: 600px) {
+            .dropbtn a,
+            .dropdown {
+                float: none;
+                display: none;
+                text-align: left;
+                width: 100%;
+                margin: 0;
+                padding: 14px;
+            }
+        }
+        /* The dropdown container */
+        
+        .dropdown {
+            float: left;
+            overflow: hidden;
+        }
+        /* Dropdown button */
+        
+        .dropdown .dropbtn {
+            font-size: 17px;
+            border: none;
+            outline: none;
+            color: #02a05e;
+            padding: 16px 16px;
+            background-color: inherit;
+            font-family: inherit;
+            /* Important for vertical align on mobile phones */
+            margin: 0;
+            /* Important for vertical align on mobile phones */
+        }
+        /* Add a red background color to navbar links on hover */
+        
+        .dropdown:hover .dropbtn {
+            background-color: rgb(0, 51, 54);
+        }
+        /* Dropdown content (hidden by default) */
+        
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        /* Links inside the dropdown */
+        
+        .dropdown-content a {
+            float: none;
+            color: #02a05e;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+            text-align: left;
+        }
+        /* Add a grey background color to dropdown links on hover */
+        
+        .dropdown-content a:hover {
+            background-color: #ddd;
+        }
+        /* Show the dropdown menu on hover */
+        
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+        
+        @media screen and (max-width:820px) {
+            .container .card {
+                margin: 20%;
+            }
+            .container1 .card {
+                margin: 20%;
+            }
+            .container2 .card {
+                margin: 20%;
+            }
+            .container1 .card {
+                margin: 20%;
+            }
+            div#rigth {
+                position: relative;
+                margin: 15px;
+            }
+            div#mid {
+                position: sticky;
+                margin: 15px;
+            }
+            div#left {
+                position: relative;
+                margin: 15px;
+            }
+        }
+        
+        @media screen and (min-width: 820px)and (max-width:1100px) {
+            div#rigth {
+                position: absolute;
+                margin-left: 100px;
+            }
+            div#left {
+                padding-top: 510px;
+                position: relative;
+                margin-left: 100px;
+            }
+        }
+        
+        .titulo {
+            text-align: left;
+            position: relative;
+            font-size: 25px;
+            padding: 1px 0;
+            display: table;
+            margin-left: 5%;
+            text-transform: uppercase;
+            letter-spacing: .05em;
+            color: rgb(0, 51, 54);
+            font-family: Arial black;
+            width: 100%;
+            margin-bottom: 2px;
+        }
+        
+        .after {
+            position: relative;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            animation: changeColor12 4s infinite;
+            box-sizing: border-box;
+            border-bottom: 7px solid;
+        }
+        
+        .page {
+            animation: changeColor13 10s infinite;
+            background-image: url("par.PNG");
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 130px;
+            border-radius: 20px;
+            border-style: double;
+            background-position: 45%;
+            margin-top: 20px;
+        }
+        
+        div#Envio {
+            width: 500px;
+            padding: 10px 10px;
+            height: 600px;
+            margin: auto;
+            box-shadow: 5px 5px 10px rgb(0, 0, 0);
+            position: relative;
+            border-radius: 30px;
+        }
+        
+        #tex {
+            font-size: 20pt;
+            align-items: center;
+            width: 100%;
+            height: 300px;
+            overflow: auto;
+            margin: 10px 10px 10px 10px;
+        }
+        
+        @media screen and (min-width: 450px) and (max-width: 700px) {
+            div#Envio {
+                width: auto;
+                height: 600px;
+            }
+        }
+        
+        @media screen and (min-width: 100px) and (max-width:449px) {
+            .container4 .card {
+                width: 118px;
+                height: 2800px;
+            }
+            div#tex {
+                font-size: auto;
+            }
+        }
+        
+        @media screen and (min-width: 450px) and (max-width:700px) {
+            .container4 .card {
+                height: 900px;
+            }
+        }
+        
+        @media only screen and (max-width: 768px) {
+            /* For mobile phones: */
+        }
+    </style>
+</head>
+
+
+<body>
+
+
+    <div class="topnav1">
+
+
+        <center>
+            <a href="index.html">
+                <center><img src="Outlook-3vpsimoh.png" alt="" class="btn2" id="btn2" width="160" height="100"></center>
+            </a>
+        </center>
+        <br>
+
+    </div>
+
+    <section class="header">
+
+        <a name="" id=""></a>
+        <br>
+        <br>
+        <br>
+        <div class="container5" id="right">
+            <div class="card">
+                <div class="imgBx">
+                    <h1 style="color: rgb(0, 99, 94);"> Sobre Nós Historia </h1>
+                    <div id="tex" class="tex">
+                        <h2>
+                            O nome Pradel foi dado em homenagem ao capitão Frederico Pradel, militar durante a segunda guerra mundial”. No decorrer dos anos a existência da Farmácia Pradel sempre se diferenciou pela excelência em atendimento, priorizando as necessidades e bem estar
+                            dos clientes. Por solicitação dos clientes e amigos da farmácia, em janeiro de 2002, a direção criou o laboratório de manipulação, veio ao mercado farmacêutico, junta seus colaboradores e profissionais especializados em seus
+                            diversos setores para atender com ética, respeito, seriedade e compromisso, garantindo com excelência e qualidade.
+                            <br><br><br>
+                        </h2>
+
+                    </div>
+                </div>
+            </div>
+            <div id="myCarousel1" class="carousel slide" data-ride="carousel1" style="width: 70%;margin: auto;background-color: rgba(127, 255, 212, 0.199);">
+                <!-- Indicators -->
+                <ol class="carousel-indicators1">
+                    <br>
+                    <li data-target="#myCarousel1" data-slide-to="0" class="active" style="background-color: rgb(2, 63, 63);"></li>
+                    <li data-target="#myCarousel1" data-slide-to="1" style="background-color: rgb(2, 63, 63);"></li>
+                    <li data-target="#myCarousel1" data-slide-to="2" style="background-color: rgb(2, 63, 63);"></li>
+                    <li data-target="#myCarousel1" data-slide-to="3" style="background-color: rgb(2, 63, 63);"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner1" role="listbox" id="carr1" style="margin-top: 20px;">
+
+                    <div class="item active">
+                        <img id="ig" src="06022018031816.jpg" alt="morosil" width="320" height="200">
+                        <div class="carousel-caption">
+                            <h3>solidos</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img id="ig" src="faxada.jpg" alt="afronn" width="320" height="200">
+                        <div class="carousel-caption">
+                            <h3>faxada</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img id="ig" src="Lab. Dermato.png" alt="sceletiumtortuosum" width="320" height="200">
+                        <div class="carousel-caption">
+                            <h3>dermato</h3>
+                            <p></p>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="unnamed.jpg" alt="siliciummaxliq" width="320" height="200">
+                        <div class="carousel-caption">
+                            <h3>cabines</h3>
+                            <p></p>
+                        </div>
+                    </div>
+                    <br>
+                </div>
+
+                <!-- Left and right controls -->
+                <a class="left carousel-control1" href="#myCarousel1" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src="seta-esquerda.png" alt="" ></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control1" href="#myCarousel1" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><img src="seta-direita.png" alt=""></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    $('#contact-form').submit(function(e) {
+        var email = document.getElementById('inputEmail'),
+            message = document.getElementById('InputMessage');
+
+        if (!email.value || !message.value) {
+            alertify.error('Por favor checar suas entradas')
+        } else {
+            $.ajax({
+                url: "https: //formspree.io/embuscadofullstack@gmail.com",
+                method: "POST",
+                data: $(this).serialize(),
+                dataType: "json"
+            })
+            e.preventDefault()
+            $(this).get(0).reset()
+            alertify.success('Menssagem enviada')
+        }
+    })
+
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "450px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function openNav1() {
+        document.getElementById("mySidenav1").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "0";
+
+    }
+
+    function closeNav1() {
+        document.getElementById("mySidenav1").style.width = "0";
+        document.getElementById("mySidenav").style.width = "450px";
+    }
+
+    function openNav2() {
+        document.getElementById("mySidenav2").style.width = "250px";
+        document.getElementById("mySidenav").style.width = "0";
+    }
+
+    function closeNav2() {
+        document.getElementById("mySidenav2").style.width = "0";
+        document.getElementById("mySidenav").style.width = "450px";
+    }
+
+    function aumentar() {
+        var imagem;
+        imagem = document.getElementsByClassName("carousel-inner>.item>a>img")
+        imagem.addEventListener("mousemove", aumentar);
+        imagem.document.style.width = "30%"
+
+
+    }
+
+    function myFunction() {
+        var input, filter, ul, li, a, i;
+        input = document.getElementById("mySearch");
+        filter = input.value.toUpperCase();
+        ul = document.getElementById("myMenu");
+        li = ul.getElementsByTagName("li");
+        for (i = 0; i < li.length; i++) {
+            a = li[i].getElementsByTagName("a")[0];
+            if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                li[i].style.display = "";
+            } else {
+                li[i].style.display = "none";
+            }
+        }
+    }
+
+    function verificar() {
+        var radio = document.getElementsByName("radio");
+
+        var txt = document.getElementById("txt");
+        if (radio[0].checked) { //se tiver marcado casa simples e clar   
+            txt = document.getElementById("txt").style.display = "inline-block";
+        } else { //marcado casa simples escura
+            txt = document.getElementById("txt").style.display = "none";
+
+        }
+    }
+</script>
+
+</html>
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>
+                Redes social</h2>
+            <div class="content">
+                <p>
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/pg/pradel.manipulacao/about/?ref=page_internal
+            "><span class="fab fa-facebook-f"></span></a>
+
+                    <a href="https://www.instagram.com/farmaciapradel/
+            "><span class="fab fa-instagram"></span></a>
+
+                    <a href="https://www.reclameaqui.com.br/empresa/farmacia-pradel/
+            "><span class="fas fa-warning"></span></a>
+
+                    <h2>formas de pagamento</h2>
+                    <div class="content"></div>
+                    <img src="Bandeiras.png"></img>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>
+                Unidades</h2>
+            <div class="content">
+                <div class="place">
+                    <a href="https://www.google.com.br/maps/place/Pra%C3%A7a+Isai+Leiner,+11+-+Jardim+Bonfiglioli,+S%C3%A3o+Paulo+-+SP,+05592-140/@-23.5780547,-46.7435023,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce567a4d521ba7:0x920cfc7e24aa5a8f!8m2!3d-23.5780596!4d-46.7413136?hl=pt-BR&authuser=0">
+                        <span class="fas fa-map-marker-alt"></span></a>
+                    <span class="text">Pç Isai Leiner, 11, Jd Bonfiglioli, São Paulo<br>SP, 05592-140
+          </span>
+                </div>
+
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> (11) 3731-2130 <a href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20fazer%20um%20orçamento!"> <span class="fas fa-phone-alt"></span></a>(11)
+                    98863-7547
+
+                    </span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">manipulacaopradel@uol.com.br          
+          </span>
+                    <br>
+                    <span class="text">SAC: e-mail: carla.farmaciapradel@hotmail.com</span>
+                    <br><br>
+                    <p style="font-size: 12px;">&copy; 2020 www.embuscadofullstack.tk
+                        <p>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>
+                Contate-nos</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">
+                            Email *</div>
+                        <input type="email" id="inputEmail" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">
+                            Message *</div>
+                        <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                        <input type="text" style="width: 100%; background-color: #151515; font-size: 1.0625rem;" rows="2" cols="25" id="InputMessage" required>
+                        <!-- replace this changeit name to textarea -->
+
+                        <br/>
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>

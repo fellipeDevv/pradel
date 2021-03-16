@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/carousel.js"></script>
+    <title>Envio de Receita,Reclamações, Saber Sobre</title>
+</head>
+
+
+<body>
+
+
+    <div class="topnav1">
+
+
+        <center>
+            <a href="index.html">
+                <center><img src="img/Outlook-3vpsimoh.png" alt="" class="btn2" id="btn2" width="160" height="100"></center>
+            </a>
+        </center>
+        <br>
+
+    </div>
+
+    <section class="header">
+
+        <a name="" id=""></a>
+        <br>
+        <br>
+        <br>
+        <div class="container4" id="right">
+            <div class="card">
+                <div class="imgBx">
+                    <h1 style="color: rgb(0, 99, 94);"> Envio de receita<br>Reclamações<br>Saber sobre</h1>
+                    <label for="Nome">Nome Completo:</label>
+                    <input type="Nome" style="color: black;">
+                    <br>
+                    <br>
+                    <label for="Celular:">Celular:</label>
+                    <input type="Celular" placeholder="Ex: (11) 9867-09876" style="color: black;"> </input>
+                    <br><br>
+                    <label for="Email:">E-mail:</label>
+                    <input type="email" placeholder="Ex: 123@hotmail.com..." style="color: black;"> </input>
+                    <br>
+                    <br>
+                    <a>Categoria:<input type="text" placeholder="Categorias..." list="Categoria" style="color: black;"></a>
+                    <datalist id="Categoria">                
+                            <ul id="Categoria" >
+                                <option> <li><a class="active" href=""></a></li></option>
+                             <option>  <li> <a >Reclamação</a></li></option>
+                              <option> <li><a >Orçamento</a></li></option>
+                                 <option> <li><a >Sobre Matéria prima</a></li></option>
+                            </ul>
+                        </datalist>
+
+                    <br>
+                    <br>
+                    <form action="processa_imagem_perfil.php" method="post" enctype="multipart/form-data">
+                        <a>Anexar: <label><input type="file" name="image"></label></a>
+                    </form>
+                    <label for="Cep">CEP:  
+                    <input type="radio" name="radio" id="ce" onclick="verificar()"></input> Retirada:<input type="radio" name="radio" id="re" onclick="verificar()"></input><br><input type="text" id="txt" placeholder="CEP: 00000-000 " style="display:none; color: black;"></input></label></div>
+
+                <div class="contentBx">
+                    <br><br><br><br><br>
+                    <button type="submit">Enviar</button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
+<footer>
+    <div class="main-content">
+        <div class="left box">
+            <h2>
+                Redes social</h2>
+            <div class="content">
+                <p>
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/pg/pradel.manipulacao/about/?ref=page_internal
+            "><span class="fab fa-facebook-f"></span></a>
+
+                    <a href="https://www.instagram.com/farmaciapradel/
+            "><span class="fab fa-instagram"></span></a>
+
+                    <a href="https://www.reclameaqui.com.br/empresa/farmacia-pradel/
+            "><span class="fas fa-warning"></span></a>
+
+                    <h2>formas de pagamento</h2>
+                    <div class="content"></div>
+                    <img src="img/Bandeiras.png"></img>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>
+                Unidades</h2>
+            <div class="content">
+                <div class="place">
+                    <a href="https://www.google.com.br/maps/place/Pra%C3%A7a+Isai+Leiner,+11+-+Jardim+Bonfiglioli,+S%C3%A3o+Paulo+-+SP,+05592-140/@-23.5780547,-46.7435023,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce567a4d521ba7:0x920cfc7e24aa5a8f!8m2!3d-23.5780596!4d-46.7413136?hl=pt-BR&authuser=0">
+                        <span class="fas fa-map-marker-alt"></span></a>
+                    <span class="text">Pç Isai Leiner, 11, Jd Bonfiglioli, São Paulo<br>SP, 05592-140
+          </span>
+                </div>
+
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> (11) 3731-2130 <a href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20fazer%20um%20orçamento!"> <span class="fas fa-phone-alt"></span></a>(11)
+                    98863-7547
+
+                    </span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">manipulacaopradel@uol.com.br          
+          </span>
+                    <br>
+                    <span class="text">SAC: e-mail: carla.farmaciapradel@hotmail.com</span>
+                    <br><br>
+                    <p style="font-size: 12px;">&copy; 2020 www.embuscadofullstack.tk
+                        <p>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>
+                Contate-nos</h2>
+            <div class="content">
+                <form action="#">
+                    <div class="email">
+                        <div class="text">
+                            Email *</div>
+                        <input type="email" required>
+                    </div>
+                    <div class="msg">
+                        <div class="text">
+                            Message *</div>
+                        <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                        <textarea style="width: 100%; background-color: #151515; font-size: 1.0625rem;" id=".msgForm" rows="2" cols="25" required></textarea>
+                        <!-- replace this changeit name to textarea -->
+
+                        <br />
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>

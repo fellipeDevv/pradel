@@ -1,0 +1,745 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Farmácia Pradel</title>
+    <meta name="keywords" content="Farmácia Pradel, Manipulação, Saúde, Veterinário, medicamentos, Farmácia, Emagrecimento, Humano, Beleza">
+    <meta name="description" content="farmacia pradel voltada para manipulação de medicamentos para uso Humano, Veterinario. Encontra-se na região do jd.Bonfiglioli">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/javascript.js"></script>
+    <script src="js/carousel.js"></script>
+    <title>home</title>
+</head>
+
+
+<body>
+
+    <!--DIV PARA BARRA SUPERIOR-->
+    <div class="topnav" id="opa">
+        <div class="btn2" id="log">
+            <center><img src="img/Outlook-3vpsimoh.png" alt="" class="btn2" style="max-width: 30%;height: auto;margin: -17px auto;margin-top: 5px;"></center>
+        </div>
+        <a href="index.html" id="log1">
+            <center><img src="img/Outlook-3vpsimoh.png" alt="" class="btn2" width="160px" height="auto" style="margin: -17px auto;margin-top: 5px;"></center>
+        </a>
+        <br>
+        <a class="active" href="index.html">Home</a>
+        <a href="EnvioDeReceita.html">Envio de receita</a>
+        <div class="dropdown">
+            <button class="dropbtn">Categorias
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+                <a href="#emagrecer">Emagrecimento</a>
+                <a href="#ganho">Suplementos</a>
+                <a href="#saude">Saúde</a>
+                <a href="#beleza">Beleza</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <button class="dropbtn">Contatos
+                <i class="fa fa-caret-down"></i>
+              </button>
+            <div class="dropdown-content">
+                <a href="#Contatos">Contatos</a>
+                <a href="http://www.embuscadofullstack.tk/suporte.html">Suporte</a>
+            </div>
+
+        </div>
+
+        <a href="#vet" class="as">Veterinário</a>
+        <a href="Bases-Embalagens.html">Bases/Embalagens</a>
+        <a href="SobreNos.html">Sobre nós</a>
+
+        <!--FORM PARA BARRA DE PESQUISA-->
+        <form class="pesquisa">
+            <input type="text" id="mySearch" style=" color: rgb(0, 51, 54);" list="historico" onkeyup="myFunction()" placeholder="Buscar..." title="Categoria...">
+            <datalist id="historico">                
+                    <ul id="myMenu">
+                        <option> <li><a class="active" href="index.html">Home</a></li></option>
+                     <option>  <li><a href="EnvioDeReceita.html">envio de receita</a></li></option>
+                      <option> <li><a href="#emagrecer">Emagrecimento</a></li></option>
+                         <option> <li><a href="#ganho">Suplementos</a></li></option>
+                         <option> <li> <a href="#saude">Saúde</a></li></option>
+                          <option>  <li> <a href="#beleza">Beleza</a></li></option>
+                         <option>  <li><a href="#Contatos">Contatos</a></li></option>
+                          <option>  <li> <a href="http://www.embuscadofullstack.tk/suporte.html">Suporte</a></li></option>
+                       <option>  <li> <a href="#vet" class="as">Veterinario</a></li></option>
+                  <option>   <li> <a href="Bases-Embalagens.html">Bases/Embalagens</a></li></option>
+                         <option>    <li> <a href="SobreNos.html">Sobre nós</a></li></option>
+                    </ul>
+                </datalist>
+        </form>
+
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#home">Home</a>
+            <a href="EnvioDeReceita.html">Envio de receita</a>
+            <a href="#conteudo" class="openbtn" onclick="openNav1()">Categorias<span onclick="openNav1()" style="font-size: 28px;cursor:pointer;color: aquamarine;"> + </span></a>
+            <a href="#contatos" class="openbtn" onclick="openNav2()">Contatos<span onclick="openNav2()" style="font-size: 28px;cursor:pointer;color: aquamarine;"> + </span></a>
+            <a href="#vet">Veterinário</a>
+            <a href="Bases-Embalagens.html">Bases/Embalagens</a>
+            <a href="SobreNos.html">Sobre nós</a>
+        </div>
+        <div id="mySidenav1" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav1()">&times;</a>
+            <a href="#emagrecer">Emagrecimento</a>
+            <a href="#ganho">Suplementos</a>
+            <a href="#saude">Saúde</a>
+            <a href="#beleza">Beleza</a>
+        </div>
+        <div id="mySidenav2" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav2()">&times;</a>
+            <a href="#Contatos">Contatos</a>
+            <a href="http://www.embuscadofullstack.tk/suporte.html">Suporte</a>
+        </div>
+        <span style="font-size:40px;cursor:pointer;float: right;margin-right: 15px; animation: changeColor4 10s infinite;" onclick="openNav()">&#9776;</span>
+    </div>
+    <!--SECTION PARA CAROUSEL-->
+    <section class="header" style="background-size: 50%;">
+        <br>
+        <div id="espaço" class="espaço" style="display: none;">
+            <br><br><br><br><br><br><br><br>
+        </div>
+        <div><br></div>
+        <br>
+        <div id="myCarousel11" class="carousel slide" data-ride="carousel11" style="width: 100%;margin: auto;background-color: rgba(127, 255, 212, 0.199);">
+            <!-- Indicators -->
+            <ol class="carousel-indicators11">
+                <br>
+                <li data-target="#myCarousel11" data-slide-to="0" class="active" style="background-color: rgb(2, 63, 63);"></li>
+                <li data-target="#myCarousel11" data-slide-to="1" style="background-color: rgb(2, 63, 63);"></li>
+                <li data-target="#myCarousel11" data-slide-to="2" style="background-color: rgb(2, 63, 63);"></li>
+                <li data-target="#myCarousel11" data-slide-to="3" style="background-color: rgb(2, 63, 63);"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner11" role="listbox" id="carr1" style="margin-top:40px;">
+
+                <div class="item active">
+                    <img id="ig" src="img/morosil.jpg" alt="morosil" width="330" height="300">
+                    <div class="carousel-caption">
+                        <h3>morosil</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img id="ig" src="img/affron.jpg" alt="afronn" width="330" height="300">
+                    <div class="carousel-caption">
+                        <h3>affron</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img id="ig" src="img/sceletiumtortuosum.jpg" alt="sceletiumtortuosum" width="330" height="300">
+                    <div class="carousel-caption">
+                        <h3>sceletiumtortuosum</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="img/siliciummaxliq.jpg" alt="siliciummaxliq" width="330" height="300">
+                    <div class="carousel-caption">
+                        <h3>siliciummaxliq</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control11" href="#myCarousel11" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src="img/seta-esquerda.png" alt="" ></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control11" href="#myCarousel11" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><img src="img/seta-direita.png" alt=""></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        <br>
+        <div class="page">
+            <center><img src="img/par.PNG" alt="" id="fot" width="98%" height="124px" style="border-radius: 20px;"></center>
+        </div>
+        <a name="Beleza" id="beleza"></a>
+        <li style="color: rgba(0, 0, 0, 0);">
+            <h1 class="titulo" onclick="sizea()">Beleza
+                <a class="titulo" id="ab" style="margin: 0px;">+</a>
+                <a class="titulo" id="bc" style=" margin-top: -450px;top:-16px; margin: 0px; display: none;font-size:50px;">
+                    - </a>
+
+            </h1>
+        </li>
+        <h2 class="after"></h2>
+        <!--DIVS DE ANIMAÇÃO DIREITA-->
+        <div class="un" id="aa" style="display: none;">
+            <div class="container" id="rigth">
+                <div class="card">
+                    <div class="imgBx" id="txt">
+                        <img src="img/hidrobiorusol.png">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia">Este ativo de uso tópico contém Rutina, um bioflavonóide de origem vegetal. Por preservar as características naturais da Rutina, Hidrobiorusol tem ação garantida no auxilio da circulação na área dos olhos, contribuindo para a redução
+                            de bolsas e olheiras!</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Hidrobiorusol</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais()" onmouseout="mover()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20hidrobiorusol">clique aqui</a>
+
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO DO MEIO-->
+            <div class="container1" id="mid">
+                <div class="card">
+                    <div class="imgBx" id="txt1">
+                        <img src="img/epifactor.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia1">EPIfactor estimula a regenração da pele de forma natural, reduzindo o tempo de recuperação após cirurgia e procedimentos estéticos.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Epifactor</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais1()" onmouseout="mover1()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20epifactor">clique aqui</a>
+
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO ESQUERDA-->
+            <div class="container2" id="left">
+                <div class="card">
+                    <div class="imgBx" id="txt2">
+                        <img src="img/latanoprosta.jpg">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia2">Latanoprosta Fagron em TrichoCream™ ajuda a estimular o crescimento de cílios e sobrancelhas. O grande aliado para a conquista de cílios longos e sobrancelhas volumosas.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Latanoprosta</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais2()" onmouseout="mover2()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20latanoprosta">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a name="Saúde" id="saude"></a>
+        <li style="color: rgba(0, 0, 0, 0);">
+            <h1 class="titulo" onclick="sizeb()">Saúde
+                <a class="titulo" id="cd" style="margin: 0px;">+</a>
+                <a class="titulo" id="de" style=" margin-top: -450px;top:-16px; margin: 0px; display: none;font-size:50px;">
+                - </a>
+            </h1>
+        </li>
+        <!--DIVS DE ANIMAÇÃO -->
+        <h2 class="after"></h2>
+        <div class="un" id="b" style="display: none;">
+            <div class="container" id="rigth">
+                <div class="card">
+                    <div class="imgBx" id="txt3">
+                        <img src="img/siliciummaxliq.jpg"></img>
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia3">SiliciuMax Líquido promove uma ação detoxificante celular, eliminando e bioconvertendo proteínas insolúveis, agregados de macromoléculas, lipídios oxidados e organelas danificadas, evitando assim o acúmulo de componentes degradados
+                            no interior da célula e promovendo a longevidade celular.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Silicium max</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais3()" onmouseout="mover3()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20siliciummaxliq">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="mid">
+                <div class="card">
+                    <div class="imgBx" id="txt4">
+                        <img src="img/sceletiumtortuosum.jpg">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia4">Silício Quelado é um suplemento mineral indicado para a pele, unhas e cabelo, contribuindo para a sua saúde e estrutura. Este mineral, é responsável por regular o metabolismo de muitos tecidos do corpo e uma das suas principais
+                            funções consiste na síntese de colágeno tipo I e elastina.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>sceletium tort..</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais4()" onmouseout="mover4()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20sceletiumtortuosum">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="left">
+                <div class="card">
+                    <div class="imgBx" id="txt5">
+                        <img src="img/biointestil.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia5">É o conjunto dos microrganismos existentes no nosso intestino e tem influência na fisiologia, na manutenção dos tecidos e órgãos, no desempenho das funções metabólicas e também no desenvolvimento do sistema imunológico.
+                        </p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Biointestil</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais5()" onmouseout="mover5()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20biointestil">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a name="suplemento" id="suplemento"></a>
+        <li style="color: rgba(0, 0, 0, 0);">
+            <h1 class="titulo" onclick="sizef()">Suplementos
+
+                <a class="titulo" id="kl" style="margin: 0px;">+</a>
+                <a class="titulo" id="lm" style=" margin-top: -450px;top:-16px; margin: 0px; display: none;font-size:50px;">
+                - </a>
+            </h1>
+        </li>
+        <!--DIVS DE ANIMAÇÃO -->
+        <h2 class="after"></h2>
+        <div class="un" id="f" style="display: none;">
+            <div class="container" id="rigth">
+                <div class="card">
+                    <div class="imgBx" id="txt15">
+                        <img src="img/mesterolona.PNG">
+                        <p style="display: none;font-size: 11pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia15">Compensa o déficit na formação de androgênio, a qual se reduz gradativamente com a idade. Desta forma, é possível tratar todos os estados de insuficiência provenientes de produção reduzida ou mesmo nula de androgênios endógeno.
+                            Aumento da massa muscular magra, Melhor desempenho físico, Manutenção da libido masculina pós-ciclo. </p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Mesterolona</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais15()" onmouseout="mover15()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20mesterolona">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="mid">
+                <div class="card">
+                    <div class="imgBx" id="txt16">
+                        <img src="img/follidrone.PNG">
+                        <p style="display: none;font-size: 11pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia16">Follidrone™ tem ação Building (construção e melhor definição muscular), Termogênica (Queima de gordura e Emagrecimento) e Ergogênica (Aumento de Força Muscular). Estudos práticos comprovaram que o Follidrone™ foi capaz de reduzir
+                            em 46% a concentração de Miostatina utilizando 10g/dia do ativo conforme orientado na posologia.</p>
+                    </div>
+                    <div class="contentBx" id="txt">
+                        <h2>Follidrone</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais16()" onmouseout="mover16()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20follidrone">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container2" id="left">
+                <div class="card">
+                    <div class="imgBx" id="txt17">
+                        <img src="img/andarine.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia17">Anabolismo muscular Lipólise (Queima de gordura corporal) Aumento da densidade óssea.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Andarine</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais17()" onmouseout="mover17()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20andarine">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a name="Emagrecimento" id="emagrecer"></a>
+        <li style="color: rgba(0, 0, 0, 0);">
+            <h1 class="titulo" onclick="sizec()">Emagrecimento
+
+                <a class="titulo" id="ef" style="margin: 0px;">+</a>
+                <a class="titulo" id="fg" style=" margin-top: -450px;top:-16px; margin: 0px; display: none;font-size:50px;">
+                - </a>
+            </h1>
+        </li>
+        <!--DIVS DE ANIMAÇÃO -->
+        <h2 class="after"></h2>
+        <div class="un" id="c" style="display: none;">
+            <div class="container" id="rigth">
+                <div class="card">
+                    <div class="imgBx" id="txt6">
+                        <img src="img/4-hil.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia6"> 4-HIL estimula a secreção de insulina dependente de glicose a partir de células pancreáticas. Reduz os níveis plasmáticos de triglicérides, ácidos graxos livres e colesterol, novo conceito para o tratamento da resistência insulínica.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>4-hil</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais6()" onmouseout="mover6()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%204-hil">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="mid">
+                <div class="card">
+                    <div class="imgBx" id="txt7">
+                        <img src="img/phytgen.PNG">
+                        <p style="display: none;font-size: 10pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia7">Uma dose PhyTgen® queima até 400 kcal/dia, que pode ser potencializada com uma dieta e atividade física para redução efetiva de peso. PhyTgen® regula o hormônio leptina, diminui acúmulo e gordura, reduz inflamação e estresse oxidativo
+                            envolvidos na obesidade, reduz significativamente o colesterol e a resistência insulínica.</p>
+                    </div>
+                    <div class="contentBx" id="txt">
+                        <h2>PhyTgen</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais7()" onmouseout="mover7()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20phytgen">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="left">
+                <div class="card">
+                    <div class="imgBx" id="txt8">
+                        <img src="img/morosil.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia8"> O potente efeito antioxidante de Morosil ajuda a diminuir as células de gordura, mas não faz todo o trabalho de gerenciamento de peso e medidas sozinho!</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Morosil</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais8()" onmouseout="mover8()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20morosil">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+
+        <a name="vet" id="vet"></a>
+        <li style="color: rgba(0, 0, 0, 0);">
+            <h1 class="titulo" onclick="sized()">Veterinário
+                <a class="titulo" id="hi" style="margin: 0px;">+</a>
+                <a class="titulo" id="ij" style=" margin-top: -450px;top:-16px; margin: 0px; display: none;font-size:50px;cursor: pointer;">
+                - </a>
+            </h1>
+        </li>
+        <!--DIVS DE ANIMAÇÃO -->
+        <h2 class="after"></h2>
+        <div class="un" id="d" style="display: none;">
+            <div class="container" id="rigth">
+                <div class="card">
+                    <div class="imgBx" id="txt9">
+                        <img src="img/pimovet-pimobendan.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia9">Tratamento da insuficiência cardíaca em cães causada por cardiomiopatia dilatada ou insuficiência valvular (Dobra Mitral e/ou regurgitação tricúspide).</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Pimovet</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais9()" onmouseout="mover9()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20pimovet-pimobendan">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="mid">
+                <div class="card">
+                    <div class="imgBx" id="txt10">
+                        <img src="img/amoxicilina tri.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia10">É usada em todas as espécies para tratamento de diversas infecções, inclusive infecções do trato urinário inferior, infecção em tecidos moles e pneumonias. </p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Amoxicilina trii</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais10()" onmouseout="mover10()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20amoxicilina-tri">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="left">
+                <div class="card">
+                    <div class="imgBx" id="txt11">
+                        <img src="img/basebicovet.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia11">BISCOVET é uma inovadora base pronta para manipulação de biscoitos medicamentosos de uso veterinário, que possui em sua composição um exclusivo palatabilizante, responsável por mascarar o sabor amargo e o odor desagradável dos
+                            princípios ativos.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Biscovet</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais11()" onmouseout="mover11()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20basebicovet">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <a name="humano" id="hum"></a>
+        <li style="color: rgba(0, 0, 0, 0);">
+            <h1 class="titulo" onclick="sizee()">Humano
+                <a class="titulo" id="jk" style="margin: 0px;">+</a>
+                <a class="titulo" id="kl" style=" margin-top: -450px;top:-16px; margin: 0px; display: none;font-size:50px;">
+                - </a>
+            </h1>
+        </li>
+        <!--DIVS DE ANIMAÇÃO -->
+        <h2 class="after"></h2>
+        <div class="un" id="e" style="display: none;">
+            <div class="container" id="rigth">
+                <div class="card">
+                    <div class="imgBx" id="txt12">
+                        <img src="img/biotina.PNG">
+                        <p style="display: none;font-size: 11pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia12">A Biotina é um nutriente essencial necessário para o crescimento das células e para o metabolismo de carboidratos, gorduras e proteínas. Atua na produção de ácidos graxos, anticorpos, enzimas digestivas e no metabolismo de outras
+                            vitaminas do complexo B. Ainda é importante para a saúde da pele, unha e cabelo, e pode fazer o papel de prevenção à queda de cabelo.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Biotina</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais12()" onmouseout="mover12()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20biotina">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="mid">
+                <div class="card">
+                    <div class="imgBx" id="txt13">
+                        <img src="img/niagin.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia13">Suplementação que atua com eficiência energética celular, gerando maior quantidade de NAD+ e participando na produção de hormônios relacionados ao estresse. Além disso é importante para a ação de enzimas antioxidantes, que melhoram
+                            a qualidade de vida e atuam no rejuvenescimento das células.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>Niagen</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px); cursor: pointer;" title="saiba+" onclick="lermais13()" onmouseout="mover13()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20Niagen">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+            <!--DIVS DE ANIMAÇÃO -->
+            <div class="container1" id="left">
+                <div class="card">
+                    <div class="imgBx" id="txt14">
+                        <img src="img/Insea.PNG">
+                        <p style="display: none;font-size: 12pt;margin-top: 310px;color: rgb(255, 255, 255);" id="cia14"> InSea2® é um bloqueador de carboidratos que corta sua absorção PELA METADE e também ajuda a reduzir a sonolência e o cansaço corporal logo após uma refeição.</p>
+                    </div>
+                    <div class="contentBx">
+                        <h2>InSea2</h2>
+                        <div class="size">
+                            <h3>faça seu orçamento</h3>
+                        </div>
+                        <div class="color">
+                            <a style="width: 40%;height: 30px; font-size: 12pt;margin-top: (-50px);cursor: pointer;" title="saiba+" onclick="lermais14()" onmouseout="mover14()">saiba+</a>
+                        </div>
+                        <a class="#orcamento" href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20saber%20sobre%20a%20latanoprosta">clique aqui</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <h2 class="after" id="kll" style="display: none;"></h2>
+        <div id="myCarousel1" class="carousel slide" data-ride="carousel1" style="width: 70%;margin: auto;background-color: rgba(127, 255, 212, 0.199);">
+            <!-- Indicators -->
+            <ol class="carousel-indicators1">
+                <br>
+                <li data-target="#myCarousel1" data-slide-to="0" class="active" style="background-color: rgb(2, 63, 63);"></li>
+                <li data-target="#myCarousel1" data-slide-to="1" style="background-color: rgb(2, 63, 63);"></li>
+                <li data-target="#myCarousel1" data-slide-to="2" style="background-color: rgb(2, 63, 63);"></li>
+                <li data-target="#myCarousel1" data-slide-to="3" style="background-color: rgb(2, 63, 63);"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner1" role="listbox" id="carr1" style="margin-top: 20px;">
+
+                <div class="item active">
+                    <img id="ig" src="img/06022018031816.jpg" alt="morosil" width="320" height="200">
+                    <div class="carousel-caption">
+                        <h3>solidos</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img id="ig" src="img/faxada.jpg" alt="afronn" width="320" height="200">
+                    <div class="carousel-caption">
+                        <h3>faxada</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img id="ig" src="img/Lab. Dermato.png" alt="sceletiumtortuosum" width="320" height="200">
+                    <div class="carousel-caption">
+                        <h3>dermato</h3>
+                        <p></p>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img id="ig" src="img/unnamed.jpg" alt="siliciummaxliq" width="320" height="200">
+                    <div class="carousel-caption">
+                        <h3>cabines</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <br>
+            </div>
+
+            <!-- Left and right controls -->
+            <a class="left carousel-control1" href="#myCarousel1" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"><img src="img/seta-esquerda.png" alt="" ></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control1" href="#myCarousel1" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"><img src="img/seta-direita.png" alt=""></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+        </div>
+    </section>
+</body>
+
+</html>
+<footer>
+    <a name="Contatos" id="cont"></a>
+    <div class="main-content">
+        <div class="left box">
+            <h2>
+                Redes social</h2>
+            <div class="content">
+                <p>
+                </p>
+                <div class="social">
+                    <a href="https://www.facebook.com/pg/pradel.manipulacao/about/?ref=page_internal
+            "><span class="fab fa-facebook-f"></span></a>
+
+                    <a href="https://www.instagram.com/farmaciapradel/
+            "><span class="fab fa-instagram"></span></a>
+
+                    <a href="https://www.reclameaqui.com.br/empresa/farmacia-pradel/
+            "><span class="fas fa-warning"></span></a>
+
+                    <h2>formas de pagamento</h2>
+                    <div class="content"></div>
+                    <img src="img/Bandeiras.png"></img>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="center box">
+            <h2>
+                Unidades</h2>
+            <div class="content">
+                <div class="place">
+                    <a href="https://www.google.com.br/maps/place/Pra%C3%A7a+Isai+Leiner,+11+-+Jardim+Bonfiglioli,+S%C3%A3o+Paulo+-+SP,+05592-140/@-23.5780547,-46.7435023,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce567a4d521ba7:0x920cfc7e24aa5a8f!8m2!3d-23.5780596!4d-46.7413136?hl=pt-BR&authuser=0">
+                        <span class="fas fa-map-marker-alt"></span></a>
+                    <span class="text">Pç Isai Leiner, 11, Jd Bonfiglioli, São Paulo<br>SP, 05592-140
+                    </span>
+                </div>
+
+                <div class="phone">
+                    <span class="fas fa-phone-alt"></span>
+                    <span class="text"> (11) 3731-2130 <a href="https://api.whatsapp.com/send?phone=5511988637547&text=Olá%20tudo%20bem?%20Estou%20vindo%20do%20Site!%20gostaria%20de%20fazer%20um%20orçamento!"> <span class="fas fa-phone-alt"></span></a>(11)
+                    98863-7547
+
+                    </span>
+                </div>
+                <div class="email">
+                    <span class="fas fa-envelope"></span>
+                    <span class="text">manipulacaopradel@uol.com.br          
+          </span>
+                    <br>
+                    <span class="text">SAC: e-mail: carla.farmaciapradel@hotmail.com</span>
+                    <br><br>
+                    <p style="font-size: 12px;">&copy; 2020 www.embuscadofullstack.tk
+                        <p>
+                </div>
+            </div>
+        </div>
+        <div class="right box">
+            <h2>
+                Contate-nos</h2>
+            <div class="content">
+                <form action="EnviarEmail.php" method="POST">
+                    <div class="email">
+                        <div class="text">
+                            Email *</div>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="msg">
+                        <div class="text">
+                            Message *</div>
+                        <!-- NOTE: Due to more textarea tag I got an error. So I changed the textarea name to changeit. Please change that changeit name to textarea -->
+                        <textarea class="msgForm" name="msgForm" style="width: 100%; background-color: #151515; font-size: 1.0625rem;" id="msgForm" rows="2" cols="25"></textarea>
+                        <!-- replace this changeit name to textarea -->
+
+                        <br />
+                        <div class="btn">
+                            <button type="submit">Enviar</button>
+                        </div>
+                </form>
